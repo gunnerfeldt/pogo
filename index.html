@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Stompede Simulator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="minimum-scale=0.25, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link href="css/stompede.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="gui.js"></script>
+    <script type="text/javascript" src="unit.js"></script>
+    <script type="text/javascript" src="pedalboard.js"></script>
+</head>
+
+<body id="body">
+    <div class="config" id="config">
+    </div>
+    <!--<div class="pedalboard" id="pedalboard">
+    </div>-->
+    <script>
+        //    startApp();
+        var unit = unitTemplate.patch;
+        var loops = unitTemplate.loops;
+        var sw = 0;
+
+        var pedalboard = new Pedalboard(loops, function callback(cmd, arg) {
+            if (cmd == "toggleLoop") {
+                unit.switch[sw].loop[arg.loop] = !unit.switch[sw].loop[arg.loop]
+                pedalboard.pedal[arg.loop].set(unit.switch[sw].loop[arg.loop]);
+            }
+            if (cmd == "setLoopActive") {
+                sw = arg.switch;
+                unit.switch[sw].loopActive = arg.loopActive;
+                arg.switches.switch[sw].loops = arg.loopActive;
+                arg.switches.switch[sw].select(true);
+            }
+        });
+
+        document.getElementById("body").appendChild(pedalboard.getHTML());
+
+        var switches = new Switches(unit.switch, function callback(cmd, arg) {
+            if (cmd == "setLoops") {
+                sw = arg.switch;
+                for (var i = 0; i < 8; i++) {
+                    if (unit.switch[sw].loopActive) {
+                        //    pedalboard.show();
+                        //    switches.loops(true);
+                        pedalboard.pedal[i].set(unit.switch[sw].loop[i]);
+                    } else {
+                        //    pedalboard.hide();
+                        //    switches.loops(false);
+                        pedalboard.pedal[i].set(unit.switch[sw].loop[i]);
+                    }
+                }
+            }
+        });
+
+        document.getElementById("body").appendChild(switches.getHTML());
+
+        var midi = new Midi(function callback(cmd, arg) {
+            if (cmd == "setMidiActive") {
+                if (arg.unitSwitch.type == "None") {
+                    arg.unitSwitch.type = "Note";
+                    arg.switch.midi = true;
+                } else {
+                    arg.unitSwitch.type = "None";
+                    arg.switch.midi = false;
+                }
+                arg.switch.select(true);
+            }
+            if (cmd == "cmd2") {}
+        });
+
+        document.getElementById("body").appendChild(midi.getHTML());
+
+        //     switches.switch[0].select(true);
+    </script>
+</body>
+
+</html>

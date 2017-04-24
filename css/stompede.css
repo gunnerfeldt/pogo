@@ -1,0 +1,228 @@
+.browser{
+    top: 0px;
+}
+
+body {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    transform: translate3d(0,0,0);
+    font-family: arial;
+    text-align: center;
+    background-color: #000; 
+    color: #ffcc00; 
+    text-align: center;
+}
+
+.pedalboard {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+}
+.button {
+    display: block;
+    border-radius: 20px;
+    border: 1px solid #979797;
+    -moz-box-shadow:    0px 1px 2px 0px rgba(0,0,0,0.20), inset 0px 2px 0px 0px #FFFFFF;
+    box-shadow:         0px 1px 2px 0px rgba(0,0,0,0.20), inset 0px 2px 0px 0px #FFFFFF;
+    width: 40px;
+    height: 40px;
+    top: 140px;
+    position: relative;
+    left: 80px;
+}
+.up {
+    background-image: -o-linear-gradient(-89deg, #D8D8D8 0%, #B3B3B3 100%);
+    background-image: -moz-linear-gradient(-89deg, #D8D8D8 0%, #B3B3B3 100%);
+    background-image: -ms-linear-gradient(-89deg, #D8D8D8 0%, #B3B3B3 100%);
+    background-image: linear-gradient(-179deg, #D8D8D8 0%, #B3B3B3 100%);
+}
+.down {
+    background-image: -o-linear-gradient(-89deg, #777 0%, #888 100%);
+    background-image: -moz-linear-gradient(-89deg, #777 0%, #888 100%);
+    background-image: -ms-linear-gradient(-89deg, #777 0%, #888 100%);
+    background-image: linear-gradient(-179deg, #777 0%, #888 100%);
+}
+
+.led {
+    display: block;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    top: 90px;
+    position: relative;
+    left: 90px;
+}
+.lit {
+    border: 1px solid #f00;
+    -moz-box-shadow:    0px 0px 20px 20px rgba(255,0,0,0.40), inset 0px 0px 10px 10px #Fdd;
+    box-shadow:         0px 0px 20px 20px rgba(255,0,0,0.40), inset 0px 0px 10px 10px #Fdd;
+}
+.unlit {
+    background-image: -o-linear-gradient(-89deg, #700 0%, #300 100%);
+    background-image: -moz-linear-gradient(-89deg, #700 0%, #300 100%);
+    background-image: -ms-linear-gradient(-89deg, #700 0%, #300 100%);
+    background-image: linear-gradient(-179deg, #700 0%, #300 100%);
+    border: 1px solid #555;
+    -moz-box-shadow:    0px 1px 2px 0px rgba(0,0,0,0.20), inset 0px 2px 0px 0px #999;
+    box-shadow:         0px 1px 2px 0px rgba(0,0,0,0.20), inset 0px 2px 0px 0px #999;
+}
+
+.stomp {
+    display: inline-block;
+    border: 2px solid #333;
+    border-radius: 6px;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+}
+
+#config {
+    text-align: left;
+}
+#titleSpan {
+    text-align: left;
+    font-size: 24px;
+    display: inline-block;
+    margin: 10px;
+    margin-top: 30px;
+    background: none;
+    border: none;
+    width: 280px;
+    color: #ffcc00;
+    font-weight: 700;
+}
+#pc {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    bottom: 3px;
+}
+select {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    bottom: 3px;
+    margin-right: 5px;
+}
+#save {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    bottom: 8px;
+    font-size: 24px;
+    color: #ffcc00;
+    background: #421;
+    border: solid 3px #ffcc00;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+}
+#save:hover {
+    color: #421;
+    background: #ffcc00;
+    border: solid 3px #421;
+}
+
+.configLine {
+    position: relative;
+    display: block;
+    background-color: #321;
+    border: 3px solid #000;
+    border-radius: 6px;
+    height: 80px;
+    text-align: left;
+}
+.configLabelNo {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    top:5px;
+}
+.configLabel {
+    position: absolute;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    top:42px;
+    background: none;
+    border: none;
+    width: 200px;
+    color: #ffcc00;
+}
+.littleLabel {
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    top:15px;
+    margin-bottom: 20px;
+}
+.loops {
+    position: absolute;
+    left: 300px;
+    background: #000;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.selectedLoop {
+    border: 3px solid #ffcc00;
+}
+.loopActive {
+    margin-right: 12px;
+}
+
+.midi {
+    position: absolute;
+    left: 480px;
+    background: #000;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+/* -- Styled Selects - wrapped due to FF appearance bug & MSIE -- */
+.styled_select {display: inline-block; position: relative; margin: 0; padding: 0; width: 220px; height: 48px; border: 3px solid #000 overflow: hidden; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; -khtml-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 0 0 3px #000; -moz-box-shadow: 0 0 0 6px #000; -o-box-shadow: 0 0 0 6px #000; -khtml-box-shadow: 0 0 0 6px #000; box-shadow: 0 0 0 6px #000;}
+.styled_select.match-width {display: inline-block; *display: inline; zoom: 1;}
+.styled_select {
+    left:30px;
+    top:2px;
+background-color: #321;
+background-image: -webkit-gradient(linear, left top, left bottom, from(#521), to(#421));
+background-image: -webkit-linear-gradient(top, #321, #421);
+background-image: -moz-linear-gradient(top, #321, #421);
+background-image: -o-linear-gradient(top, #321, #421);
+background-image: -ms-linear-gradient(top, #321, #421);
+background-image: linear-gradient(top, #321, #421);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#f1f1f1');
+}
+.styled_select select {position: relative; display: block; margin: 0; padding: 9px 12px 9px 12px; white-space: nowrap; width: 100%; font-size: 13px; font-size: 1.3rem; color: #ffcc00; font-family: 'Open Sans', sans-serif; font-weight: 600; font-style: normal; border: none; background: transparent; cursor: pointer; -moz-appearance: window; -webkit-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; outline: none; z-index: 2;}
+.styled_select select::-ms-expand {display: none;}
+.styled_select:hover {border: 1px solid #ffcc00;}
+.styled_select:after {position: absolute; top: 0; right: 0; width: 32px; height: 100%; speak: none; content: ''; z-index: 1;}
+.styled_select:before {position: absolute; top: 50%; right: 12px; width: 8px; height: 4px; margin: -2px 0 0 -4px; background: url(../i/select_arrow.png) no-repeat center center; speak: none; content: '';}
+.ie8 .styled_select select,
+.ie9 .styled_select select {padding-right: 12px;}
+.ie8 .styled_select:after,
+.ie9 .styled_select:after,
+.ie8 .styled_select:before,
+.ie9 .styled_select:before {display: none;}
+
+.short {
+    width: 150px;
+    left:60px;
+    top:2px;
+}

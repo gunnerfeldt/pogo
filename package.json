@@ -1,0 +1,27 @@
+{
+  "name": "pogo",
+  "productName": "pogo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --asar=false --icon=./icon.icns --prune=true --out=release-builds",
+    "postinstall": "electron-rebuild --force"
+  },
+  "dependencies": {
+    "node-hid": "^0.5.2",
+    "midi": "^0.9.5",
+    "ws": "^1.1.1",
+    "crashreporter": "^1.1.0"
+  },
+  "devDependencies": {
+    "electron": "^1.6.5",
+    "electron-packager": "^8.5.0",
+    "electron-prebuilt": "^1.4.13",
+    "electron-rebuild": "^1.5.7"
+  },
+  "author": "",
+  "license": "ISC"
+}

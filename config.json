@@ -1,0 +1,1392 @@
+{
+    "name": "stompede config",
+    "version": "1.0",
+    "currentProgram": "4",
+    "program": [
+        {
+            "name": "1-7 Interlace",
+            "initLoop": 2,
+            "disp1": 0,
+            "disp2": 0,
+            "switch": [
+                {
+                    "id": 0,
+                    "name": "Flanger",
+                    "type": "Control Change",
+                    "value": "16",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Clean",
+                    "type": "Control Change",
+                    "value": "17",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Main",
+                    "type": "Control Change",
+                    "value": "17",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Boost",
+                    "type": "Control Change",
+                    "value": "17",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Label 5",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 6",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "PC Down",
+                    "type": "Program Change",
+                    "value": -1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "PC Up",
+                    "type": "Program Change",
+                    "value": 1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                }
+            ],
+            "loop": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "name": "8 Thing On A Spring",
+            "switch": [
+                {
+                    "id": 0,
+                    "name": "None",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [
+                        "0",
+                        "1",
+                        "2",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "2",
+                        "0",
+                        "2",
+                        "1",
+                        "1"
+                    ],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Echo",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Main",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Label 4",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 5",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 6",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 7",
+                    "type": "Program Change",
+                    "value": -1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 8",
+                    "type": "Program Change",
+                    "value": 1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                }
+            ],
+            "loop": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "initLoop": 1,
+            "disp2": {
+                "type": "seq",
+                "sw": "0"
+            }
+        },
+        {
+            "name": "9 Fernandez",
+            "initLoop": 2,
+            "disp1": 0,
+            "disp2": {
+                "type": "seq",
+                "sw": "0"
+            },
+            "switch": [
+                {
+                    "id": 0,
+                    "name": "Sequencer",
+                    "type": "Sequence",
+                    "value": 1,
+                    "single": 0,
+                    "sequence": [
+                        "36",
+                        "37",
+                        "38",
+                        "39"
+                    ],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Clean",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Main",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Fat",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "None",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "In The Air Tonight",
+                    "type": "Note",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [
+                        "48"
+                    ],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "PC Down",
+                    "type": "Program Change",
+                    "value": -1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "PC Up",
+                    "type": "Program Change",
+                    "value": 1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                }
+            ],
+            "loop": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "name": "10 All You Had",
+            "switch": [
+                {
+                    "id": 0,
+                    "name": "Mainstage",
+                    "type": "Control Change",
+                    "value": "16",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Main",
+                    "type": "Control Change",
+                    "value": "17",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Boost",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Boost",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Label 5",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 6",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 7",
+                    "type": "Program Change",
+                    "value": -1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 8",
+                    "type": "Program Change",
+                    "value": 1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                }
+            ],
+            "loop": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "initLoop": 1
+        },
+        {
+            "name": "11-15 Shelagh...",
+            "switch": [
+                {
+                    "id": 0,
+                    "name": "Mainstage",
+                    "type": "Control Change",
+                    "value": "16",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Clean",
+                    "type": "None",
+                    "value": "17",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Main",
+                    "type": "Control Change",
+                    "value": "17",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Label 4",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 5",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 6",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 7",
+                    "type": "Program Change",
+                    "value": -1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Label 8",
+                    "type": "Program Change",
+                    "value": 1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                }
+            ],
+            "loop": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "initLoop": 2
+        },
+        {
+            "name": "16-17 Throwstar",
+            "initLoop": 2,
+            "disp1": 0,
+            "disp2": {
+                "type": "seq",
+                "sw": "0"
+            },
+            "switch": [
+                {
+                    "id": 0,
+                    "name": "Sample 1",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [
+                        "36",
+                        "37"
+                    ],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Clean",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [
+                        "25"
+                    ],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Main",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Solo",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        1,
+                        0,
+                        0,
+                        1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Label 5",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Sample 1",
+                    "type": "Note",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [
+                        "36"
+                    ],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "PC Down",
+                    "type": "Program Change",
+                    "value": -1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "PC Up",
+                    "type": "Program Change",
+                    "value": 1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                }
+            ],
+            "loop": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "name": "18 Take a Down",
+            "initLoop": 0,
+            "disp1": 0,
+            "disp2": 0,
+            "switch": [
+                {
+                    "id": 0,
+                    "name": "Leslie/Harmnzr",
+                    "type": "Control Change",
+                    "value": "16",
+                    "single": 0,
+                    "sequence": [
+                        "24"
+                    ],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Clean",
+                    "type": "Control Change",
+                    "value": "17",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Main",
+                    "type": "Control Change",
+                    "value": "17",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Boost",
+                    "type": "Control Change",
+                    "value": "17",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        1,
+                        1,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Label 5",
+                    "type": "None",
+                    "value": "18",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Bus",
+                    "type": "Note",
+                    "value": "19",
+                    "single": 0,
+                    "sequence": [
+                        "36"
+                    ],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "PC Down",
+                    "type": "Program Change",
+                    "value": -1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "PC Up",
+                    "type": "Program Change",
+                    "value": 1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                }
+            ]
+        },
+        {
+            "name": "19-20 Kilotin / Left Rustle",
+            "initLoop": 2,
+            "disp1": 0,
+            "disp2": 0,
+            "switch": [
+                {
+                    "id": 0,
+                    "name": "Mainstage",
+                    "type": "Control Change",
+                    "value": "16",
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "Clean",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Main",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Boost",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Metal",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "Fat",
+                    "type": "None",
+                    "value": 0,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        1,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 1
+                },
+                {
+                    "id": 0,
+                    "name": "PC Down",
+                    "type": "Program Change",
+                    "value": -1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                },
+                {
+                    "id": 0,
+                    "name": "PC Up",
+                    "type": "Program Change",
+                    "value": 1,
+                    "single": 0,
+                    "sequence": [],
+                    "loop": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "loopActive": 0
+                }
+            ],
+            "loop": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ]
+        }
+    ]
+}
