@@ -320,6 +320,7 @@ var Midi = function(callback) {
     })
     this.container.appendChild(this.attachBubble);
     keyboard(6, this.container);
+
 }
 
 Midi.prototype.getHTML = function() {
