@@ -1,0 +1,10 @@
+Program change
+    Mainstage In > 
+        select patch
+        Attributes>Program change
+    Mainsage Out >
+        Each patch need a MIDI out channel strip
+        MIDI out tab>Send Program change
+
+
+    
