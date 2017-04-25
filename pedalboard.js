@@ -2,6 +2,8 @@ var pWidth = 77;
 var pHeight = 112;
 var pedalOff = "url(img/pedalOff.png)";
 var pedalOn = "url(img/pedalOn.png)";
+var triangleImg = new Image;
+triangleImg.src = "img/triangle.png";
 var colors = ["#000", "#5B3B00", "#9B6322", "#F8B200", "#FFC737", "#FF3E00", "#FFDC00", "#D8D8D8"];
 var unitSwitches;
 
@@ -37,11 +39,22 @@ var Pedalboard = function(loops, callback) {
     this.attachBubble.addEventListener('click', function(e) {
         //   switches.switch[switches.selectedSwitch].loops = !switches.switch[switches.selectedSwitch].loops;
         //   switches.switch[switches.selectedSwitch].select(true);
+        triangle.stop();
         callback('setLoopActive', {
             switch: switches.selectedSwitch,
             loopActive: !switches.switch[switches.selectedSwitch].loops,
             switches: switches
         })
+    })
+    this.attachBubble.addEventListener('mouseenter', function(e) {
+        if (me.attachBubble.innerHTML == "Connect Loops") {
+            triangle.start(me.container, "down");
+        } else {
+            triangle.start(me.container, "up");
+        }
+    })
+    this.attachBubble.addEventListener('mouseleave', function(e) {
+        triangle.stop();
     })
     this.container.appendChild(this.attachBubble);
 
@@ -288,6 +301,7 @@ Switch.prototype.setText = function(text) {
 }
 
 var Midi = function(callback) {
+    var me = this;
     this.callback = callback;
     this.container = document.createElement('div');
     this.container.style.display = "flex";
@@ -312,11 +326,22 @@ var Midi = function(callback) {
     this.attachBubble.style.borderRadius = (pWidth * 0.25) + "px";
     this.attachBubble.style.cursor = "pointer";
     this.attachBubble.addEventListener('click', function(e) {
+        triangle.stop();
         callback('setMidiActive', {
             switchID: switches.selectedSwitch,
             unitSwitch: unitSwitches[switches.selectedSwitch],
             switch: switches.switch[switches.selectedSwitch]
         })
+    })
+    this.attachBubble.addEventListener('mouseenter', function(e) {
+        if (me.attachBubble.innerHTML == "Connect MIDI") {
+            triangle.start(me.container, "up");
+        } else {
+            triangle.start(me.container, "down");
+        }
+    })
+    this.attachBubble.addEventListener('mouseleave', function(e) {
+        triangle.stop();
     })
     this.container.appendChild(this.attachBubble);
     keyboard(6, this.container);
@@ -358,5 +383,53 @@ function keyboard(octs, parent) {
         }
         container.appendChild(canvas);
         parent.appendChild(container);
+    }
+}
+
+
+
+
+var triangle = {
+    triangleDiv: document.createElement('div'),
+    up: 140,
+    down: -0,
+    offset: 0,
+    pos: 0,
+    inc: 0,
+    max: 30,
+    timer: {},
+    start: function(elem, dir) {
+        triangle.triangleDiv.style.backgroundImage = "url(img/triangle.png)";
+        triangle.triangleDiv.id = "triangle";
+        triangle.triangleDiv.style.width = "42px";
+        triangle.triangleDiv.style.height = "31px";
+        triangle.triangleDiv.style.position = "absolute";
+        var mid = (parseInt(elem.style.width) - 42) / 2;
+        triangle.triangleDiv.style.left = mid + "px";
+        triangle.pos = 0;
+        if (dir == "up") {
+            triangle.inc = 1;
+            triangle.offset = triangle.up;
+            triangle.triangleDiv.style.transform = "rotate(0deg)";
+        } else {
+            triangle.inc = -1;
+            triangle.offset = triangle.down;
+            triangle.triangleDiv.style.transform = "rotate(180deg)";
+        }
+        triangle.timer = setInterval(triangle.loop, 15);
+        triangle.loop();
+        elem.appendChild(triangle.triangleDiv);
+    },
+    stop: function() {
+        clearInterval(triangle.timer);
+        var div = document.getElementById('triangle');
+        if (div) {
+            div.parentNode.removeChild(div);
+        }
+    },
+    loop: function() {
+        triangle.pos = triangle.pos + triangle.inc;
+        if (Math.abs(triangle.pos) > triangle.max) triangle.pos = 0;
+        triangle.triangleDiv.style.bottom = triangle.pos + triangle.offset + "px";
     }
 }
